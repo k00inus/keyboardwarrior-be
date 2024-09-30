@@ -1,0 +1,284 @@
+*{
+    background-color: #D2E0FB;
+}
+  h1{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  h2{
+    text-align: center;
+    font-size: large;
+  }
+
+body{
+    font-family: 'Lato', sans-serif;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+}
+
+.TextBox{
+    height: 200px;
+    background-color: #D2E0FB;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    width: 100%; 
+    text-align: center;
+  }
+
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #D2E0FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.Keyboard{
+    max-width: 1008px;
+    width: 100%;
+    background-color: #e7e7e7;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    order: 2;
+}
+
+.row{
+    display: flex;
+}
+
+.keys{
+    width: 60px;
+    height: 60px;
+    background-color: #FAF9F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+
+
+.keys.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Backspace{
+    width: 185px;
+    height: 60px;
+    background-color: #FADFA1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Backspace.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Tab{
+    width: 120px;
+    height: 60px;
+    background-color: #FADFA1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+
+.Tab.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Slash{
+    width:155px;
+    height: 60px;
+    background-color: #FADFA1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Slash.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Caps_Lock{
+    width: 128px;
+    height: 60px;
+    background-color: #FADFA1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Caps_Lock.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Enter_Key{
+    width:120px;
+    height: 60px;
+    background-color: #FADFA1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Enter_Key.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+
+.Ctrl{
+    width:120px;
+    height: 60px;
+    background-color: #7EACB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+
+.Ctrl.active{
+    background-color: #303030;
+    color: #fff;
+}
+.Alt{
+    width:120px;
+    height: 60px;
+    background-color: #7EACB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+
+.Alt.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+
+.Backslash{
+    width:120px;
+    height: 60px;
+    background-color: #FAF9F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Backslash.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+
+.Shift_Left{
+    width:124px;
+    height: 60px;
+    background-color: #7EACB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Shift_Left.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Shift_Right{
+    width:187px;
+    height: 60px;
+    background-color: #7EACB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+
+.Shift_Right.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.Space_Key {
+    max-width: 600px;
+    width: 100%;
+    height: 60px;
+    background-color: #C96868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    transition: .2s;
+    border: 2px solid #000;
+}
+.Space_Key.active{
+    background-color: #303030;
+    color: #fff;
+}
+
+.text {
+    max-width: 1008px;
+    width: 100%;
+    height: 90px;
+    margin-bottom:30px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+
+.link{
+    color: #C96868;
+    margin: 10px;
+    font-size: large;
+    display: inline-block;
+  }
+
+  nav{
+    display: flex;
+    justify-content: right;
+  }

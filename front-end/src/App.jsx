@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Home from './Component/Home'
 import MyProfile from './Component/MyProfile'
@@ -12,7 +13,12 @@ function App() {
 
   return (
     <>
-    <Home/>
+    <Routes>
+      <Route path='/'
+      element={<Home/>}/>
+      <Route path='/login'
+      element={<Login/>}/>
+    </Routes>
     </>
   )
 }
