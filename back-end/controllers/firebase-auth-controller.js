@@ -20,7 +20,8 @@ class FirebaseAuthController {
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        res.status(201).json({ auth: auth.currentUser, user: userCredential });
+        sendEmailVerification(auth.currentUser);
+        res.status(201).json({ user: userCredential });
       })
       .catch((error) => {
         const errorMessage =
