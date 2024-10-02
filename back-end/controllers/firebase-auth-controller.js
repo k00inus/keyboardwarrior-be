@@ -23,7 +23,7 @@ class FirebaseAuthController {
         sendEmailVerification(auth.currentUser)
           .then(() => {
             res.status(201).json({
-              user: auth.currentUser,
+              uid: auth.currentUser.uid,
               message: "Verification email sent! User created successfully!",
             });
           })
