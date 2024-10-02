@@ -3,7 +3,6 @@ const {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
-  sendEmailVerification,
   sendPasswordResetEmail,
 } = require("../config/firebase");
 
@@ -20,7 +19,6 @@ class FirebaseAuthController {
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        sendEmailVerification(auth.currentUser);
         res.status(201).json({ user: userCredential });
       })
       .catch((error) => {
