@@ -20,17 +20,9 @@ class FirebaseAuthController {
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        sendEmailVerification(auth.currentUser)
-          .then(() => {
-            res.status(201).json({
-              uid: auth.currentUser.uid,
-              message: "Verification email sent! User created successfully!",
-            });
-          })
-          .catch((error) => {
-            console.error(error);
-            res.status(500).json({ error: "Error sending email verification" });
-          });
+        res.status(201).json({
+          userCredential,
+        });
       })
       .catch((error) => {
         const errorMessage =
